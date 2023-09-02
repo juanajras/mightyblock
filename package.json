@@ -4,7 +4,9 @@
   "description": "Technical Interview Saucedemo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "open": "cypress open",
+    "spec": "cypress run --spec"
   },
   "keywords": [
     "automation",
@@ -16,5 +18,9 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juanajras/mightyblock"
   }
 }

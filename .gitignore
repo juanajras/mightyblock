@@ -1,2 +1,13 @@
+#Node
 node_modules/
+
+#IDE
 .idea/
+
+#Samples
+cypress/e2e/1-getting-started
+cypress/e2e/2-advanced-examples
+
+#Assets
+cypress/downloads
+cypress/screenshots
