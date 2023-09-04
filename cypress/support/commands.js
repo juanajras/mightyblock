@@ -33,9 +33,16 @@ Cypress.Commands.add('getBySelLike', (selector, ...args) => {
     return cy.get(`[data-test*=${selector}]`, ...args)
 })
 
-/**LOGIN**/
+/**FORMS**/
 Cypress.Commands.add('login', (username, password) => {
     cy.getBySel("username").type(username).should('have.value', username)
     cy.getBySel("password").type(password).should('have.value', password)
     cy.getBySel("login-button").click()
+})
+
+Cypress.Commands.add('fillCheckoutForm', (firstName, lastName, postalCode) => {
+    cy.getBySel("firstName").type(firstName)
+    cy.getBySel("lastName").type(lastName)
+    cy.getBySel("postalCode").type(postalCode)
+    cy.getBySel("continue").click()
 })
