@@ -22,5 +22,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/juanajras/mightyblock"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.5.1"
   }
 }

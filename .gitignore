@@ -11,3 +11,4 @@ cypress/e2e/2-advanced-examples
 #Assets
 cypress/downloads
 cypress/screenshots
+cypress/reports
