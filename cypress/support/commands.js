@@ -46,3 +46,19 @@ Cypress.Commands.add('fillCheckoutForm', (firstName, lastName, postalCode) => {
     cy.getBySel("postalCode").type(postalCode)
     cy.getBySel("continue").click()
 })
+
+/**REQUESTS**/
+Cypress.Commands.add('obtainToken', (username, password) => {
+    cy.session([username, password], () => {
+      cy.request({
+        method: 'POST',
+        url: 'https://restful-booker.herokuapp.com/auth',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: { username, password },
+        }).then(({ body }) => {
+            window.localStorage.setItem('authToken', body.token)
+        })
+    })
+})

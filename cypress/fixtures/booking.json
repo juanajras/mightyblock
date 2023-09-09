@@ -1,0 +1,11 @@
+{
+  "firstname" : "Betty",
+  "lastname" : "Gibbons",
+  "totalprice" : 50,
+  "depositpaid" : true,
+  "bookingdates" : {
+    "checkin" : "2023-04-01",
+    "checkout" : "2023-05-01"
+  },
+  "additionalneeds" : "Vegetarian"
+}
