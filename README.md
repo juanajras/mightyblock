@@ -1,7 +1,7 @@
 # Mighty Block technical challenge
 Automated UI and API tests submitted for assessment by Mighty Block, targeting:
 
-* UI: [Swag Labs demo site](https://pages.github.com/)
+* UI: [Swag Labs demo site](https://www.saucedemo.com/)
 * API: [Restful-Booker](https://restful-booker.herokuapp.com/apidoc/index.html)
 
 ## Tech Stack
